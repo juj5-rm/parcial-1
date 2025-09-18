@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control financiero</title>
+    <link rel="stylesheet" href="./punto3Login.css" />
+  </head>
+  <body>
+    <div class="contentofpage">
+      <div class="cuerpo">
+        <div class="formulario">
+          <h1>Bienvenido</h1>
+          <form
+            id="loginForm"
+            action="./dashboard.html"
+            method="get"
+          >
+            <div class="username">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Ingresa tu correo"
+                required
+              />
+            </div>
+            <div class="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Ingresa tu contraseña"
+                required
+              />
+            </div>
+            <button type="submit">Iniciar sesión</button>
+          </form>
+        </div>
+      </div>
+      <p id="loginMessage" class="error-message"></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    aspect-ratio: 1 / 1;
+    background: #fef5e1;
+    padding: 25px;
+    flex-direction: column;
+}
+
+.header {
+    background: #073b63;
+    width: 100%;
+    height: 10vh;
+}
+
+.container-elements {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 25px;
+}
+
+.square,
+.framesquare,
+.container-row,
+.line3 {
+    justify-self: start;
+    grid-column: 1;
+}
+
+.frame-diamond,
+.circle1,
+.framerectangule1 {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.rectangule2,
+.circle2,
+.framesquare2 {
+    grid-column: 3;
+}
+
+.FORM {
+    margin-top: 10px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.square {
+    height: 150px;
+    aspect-ratio: 1/1;
+    background: #ef4433;
+    grid-row: 1;
+}
+
+.framesquare {
+    width: 150px;
+    aspect-ratio: 1/1;
+    background: #eea931;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+}
+
+.squareint {
+    width: 95px;
+    aspect-ratio: 1/1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.squareint2 {
+    width: 70px;
+    aspect-ratio: 1/1;
+    background: #f04534;
+    border-radius: 5px;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    grid-row: 3;
+}
+
+.rectangule {
+    width: 150px;
+    aspect-ratio: 2.5/1.2;
+    background: #f08b23;
+    grid-row: 3;
+    order: 1;
+}
+
+.line1,
+.line2,
+.line3 {
+    height: 30px;
+    width: 150px;
+
+}
+
+.line1 {
+    background: #f08a23;
+    grid-row: 3;
+    order: 2;
+}
+
+.line2,
+.line3 {
+    background: #f47070;
+}
+
+.line2 {
+    grid-row: 3;
+    order: 3;
+}
+
+.line3 {
+    grid-row: 4;
+    margin: -2px;
+}
+
+.frame-diamond {
+    height: 150px;
+    aspect-ratio: 1.3/1;
+    background: #8cbe8b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-row: 1;
+}
+
+.diamond1 {
+    width: 50%;
+    aspect-ratio: 1/1;
+    margin-bottom: 12%;
+    transform: rotate(45deg);
+    background: #1b9195;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.diamond2 {
+    width: 50px;
+    aspect-ratio: 1/1;
+    background: #ee891f;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.circle1 {
+    height: 150px;
+    aspect-ratio: 1/1;
+    background: #8b3c51;
+    border-radius: 50%;
+    grid-row: 2;
+}
+
+.framerectangule1 {
+    height: 150px;
+    aspect-ratio: 1.3/1;
+    background: #199398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3;
+}
+
+.rectanguleint {
+    height: 95px;
+    aspect-ratio: 1.3/1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.rectanguleint2 {
+    height: 70px;
+    aspect-ratio: 1.3/1;
+    background: #2ea19e;
+    border-radius: 5px;
+}
+
+.rectangule2 {
+    height: 150px;
+    aspect-ratio: 1.3/1;
+    background: #8cbe8b;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.circle2 {
+    height: 130px;
+    aspect-ratio: 1/1;
+    background: #f08920;
+    border-radius: 50%;
+    justify-self: center;
+    grid-row: 2;
+    margin: 0 5px;
+}
+
+.framesquare2 {
+    height: 195px;
+    aspect-ratio: 1/1;
+    background: #8eba8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3;
+    justify-self: end;
+    margin-top: -30px;
+}
+
+.squareint3 {
+    height: 65%;
+    aspect-ratio: 1/1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.squareint4 {
+    width: 70%;
+    aspect-ratio: 1/1;
+    background: #479a66;
+    border-radius: 5px;
+}

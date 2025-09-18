@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Financiero</title>
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside>
+    <h2>Finanzas</h2>
+    <nav>
+      <ul>
+        <li><a href="#inicio">🏠 Inicio</a></li>
+        <li><a href="#estadisticas">📊 Estadísticas</a></li>
+        <li><a href="#ingresos">💰 Ingresos</a></li>
+        <li><a href="#gastos">📉 Gastos</a></li>
+        <li><a href="#reportes">📊 Reportes</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Área Principal -->
+  <main>
+    <h1>Panel de Control</h1>
+
+    <!-- Tarjetas -->
+    <div class="cards" id="inicio">
+      <a class="card saldo" href="#reportes">
+        <h3>Saldo Total</h3>
+        <p>$12,450,000</p>
+      </a>
+      <a class="card gastos" href="#gastos">
+        <h3>Gastos del Mes</h3>
+        <p>$3,200,000</p>
+      </a>
+      <a class="card ingresos" href="#ingresos">
+        <h3>Ingresos del Mes</h3>
+        <p>$5,600,000</p>
+      </a>
+    </div>
+
+    <!-- Sección de Estadísticas -->
+    <section>
+      <h2>📊 Estadísticas</h2>
+      <div class="estadisticas" id="estadisticas">
+        <p>Comparación de ingresos y gastos por semana</p>
+        <div class="barra-container">
+          <div class="barra" style="height: 120px;">Semana 1</div>
+          <div class="barra" style="height: 160px;">Semana 2</div>
+          <div class="barra" style="height: 100px;">Semana 3</div>
+          <div class="barra" style="height: 180px;">Semana 4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movimientos de Ingresos -->
+    <section id="ingresos">
+      <h2>💰 Movimientos de Ingresos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Descripción</th>
+            <th>Monto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/09/2025</td>
+            <td>Salario</td>
+            <td>$3,000,000</td>
+          </tr>
+          <tr>
+            <td>10/09/2025</td>
+            <td>Venta freelance</td>
+            <td>$1,200,000</td>
+          </tr>
+          <tr>
+            <td>18/09/2025</td>
+            <td>Inversión</td>
+            <td>$1,400,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Movimientos de Gastos -->
+    <section id="gastos">
+      <h2>📉 Movimientos de Gastos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Descripción</th>
+            <th>Monto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>05/09/2025</td>
+            <td>Supermercado</td>
+            <td>$500,000</td>
+          </tr>
+          <tr>
+            <td>12/09/2025</td>
+            <td>Servicios públicos</td>
+            <td>$250,000</td>
+          </tr>
+          <tr>
+            <td>22/09/2025</td>
+            <td>Transporte</td>
+            <td>$150,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Reportes -->
+    <section id="reportes">
+      <h2>📑 Reportes</h2>
+      <div class="reporte">
+        <p><strong>Resumen Mensual:</strong></p>
+        <p>Ingresos: $5,600,000</p>
+        <p>Gastos: $3,200,000</p>
+        <p>Saldo final: $12,450,000</p>
+        <p>Estado: ✅ Positivo</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
