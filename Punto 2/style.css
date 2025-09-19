@@ -1,0 +1,154 @@
+body {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======== HEADER ======== */
+header {
+    background-color: #bb1919;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+/* ======== NAVBAR ======== */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #111;
+}
+
+nav a {
+  color: white;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #bb1919;
+}
+
+/* ======== MAIN & ARTICULOS ======== */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.articulos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+.articulo a{
+  text-decoration: none;
+}
+
+.articulo a:hover h2 {
+  text-decoration: underline;
+}
+
+.articulo {
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.articulo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #bb1919;
+}
+
+.articulo img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.articulo p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* ======== ARTICULO PRINCIPAL DESTACADO ======== */
+.articulo.principal {
+  grid-column: span 2;
+}
+
+.articulo.principal h2 {
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.articulo.principal img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+footer .redes-sociales {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer .redes-sociales a {
+  color: #ccc;
+  font-size: 1.4rem;
+  margin: 10px 10px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+footer .redes-sociales a:hover {
+  color: #bb1919;
+}
+
+footer .terminos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+footer .terminos a {
+  color: #ccc;
+  margin: 15px 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer .terminos a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}
